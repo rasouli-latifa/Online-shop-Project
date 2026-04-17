@@ -25,6 +25,30 @@ text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover {
+color: #B3CFE5;
+transform: translateY(-3px);
+}
+
+nav a::after {
+content: "";
+position: absolute;
+width: 0%;
+height: 2px;
+left: 0;
+bottom: -5px;
+background: white;
+transition: 0.3s;
+}
+
+nav a:hover::after {
+width: 100%;
+}
+
+nav a:hover {
+letter-spacing: 1px;
+}
+
 /* SEARCH */
 .search-box{
 width:100%;
@@ -72,11 +96,29 @@ text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
+.product:hover {
+transform: translateY(-10px) scale(1.03);
+box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
 .product img{
 width:100%;
 height:180px;
 object-fit:cover;
 border-radius:10px;
+}
+
+.product img {
+transition: transform 0.3s ease;
+}
+
+.product:hover img {
+transform: scale(1.1);
+}
+
+button:hover {
+background: #1A3D63;
+transform: scale(1.05);
 }
 
 /* BUTTON */
