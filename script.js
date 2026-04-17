@@ -9,35 +9,32 @@ var products = [
 { name:"Vintage Carpet", price:640, desc:"Antique style", img:"images/carpet6.jpeg" }
 ];
 
-// LOGIN
-function login() {
-var u=document.getElementById("username").value;
-var p=document.getElementById("password").value;
+function login(){
+let u=document.getElementById("username").value;
+let p=document.getElementById("password").value;
 
 if(u==="admin" && p==="1234"){
 localStorage.setItem("loggedIn","true");
-window.location.href="shop.html";
+window.location.href="welcome.html";
 }else{
 document.getElementById("msg").innerText="Wrong login";
 }
 }
 
-// PROTECT SHOP
-if(window.location.pathname.includes("shop.html")){
+if(location.pathname.includes("shop.html")){
 if(localStorage.getItem("loggedIn")!=="true"){
 window.location.href="login.html";
 }
 }
 
-// PRODUCT
 function openProduct(i){
 localStorage.setItem("selectedProduct",i);
 window.location.href="product.html";
 }
 
-if(window.location.pathname.includes("product.html")){
-var i=localStorage.getItem("selectedProduct");
-var p=products[i];
+if(location.pathname.includes("product.html")){
+let i=localStorage.getItem("selectedProduct");
+let p=products[i];
 
 document.getElementById("pimg").src=p.img;
 document.getElementById("pname").innerText=p.name;
@@ -49,25 +46,17 @@ function buyNow(){
 window.location.href="payment.html";
 }
 
-// PAYMENT
-if(window.location.pathname.includes("payment.html")){
-var i=localStorage.getItem("selectedProduct");
-var p=products[i];
+if(location.pathname.includes("payment.html")){
+let i=localStorage.getItem("selectedProduct");
+let p=products[i];
 
 document.getElementById("productName").innerText=p.name;
 document.getElementById("productPrice").innerText=p.price;
 }
 
 function pay(){
-alert("Payment Successful!");
-window.location.href="index.html";
-}
-
-// CART
-function addToCart(i){
-cart.push(i);
-localStorage.setItem("cart",JSON.stringify(cart));
-alert("Added to cart");
+document.querySelector(".payment-box").innerHTML=
+"<h2>Payment Successful ✅</h2><p>Thank you for your order</p>";
 }
 
 function checkout(){
@@ -75,23 +64,3 @@ alert("Order placed!");
 localStorage.removeItem("cart");
 location.reload();
 }
-
-function loadCart(){
-var list=document.getElementById("cartItems");
-if(!list)return;
-
-list.innerHTML="";
-var total=0;
-
-for(var i=0;i<cart.length;i++){
-var p=products[cart[i]];
-var li=document.createElement("li");
-li.innerText=p.name+" - $"+p.price;
-list.appendChild(li);
-total+=p.price;
-}
-
-document.getElementById("total").innerText=total;
-}
-
-loadCart();
