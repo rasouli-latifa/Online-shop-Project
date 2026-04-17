@@ -1,12 +1,12 @@
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 var products = [
-{ name:"Persian Carpet", price:180, desc:"Traditional handmade", img:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c" },
-{ name:"Modern Carpet", price:120, desc:"Minimalist style", img:"https://images.unsplash.com/photo-1616628182504-3f9d6b0a0c3d" },
-{ name:"Classic Carpet", price:150, desc:"Elegant design", img:"https://images.unsplash.com/photo-1582582429416-3c4c1e1c4f9b" },
-{ name:"Luxury Carpet", price:250, desc:"Premium quality", img:"https://images.unsplash.com/photo-1598300056393-4aac492f4344" },
-{ name:"Soft Wool Carpet", price:100, desc:"Soft texture", img:"https://images.unsplash.com/photo-1600585152854-5c2c5c4f3d4a" },
-{ name:"Vintage Carpet", price:140, desc:"Antique style", img:"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6" }
+{ name:"Afghan Carpet", price:600, desc:"Traditional hThis authentic Afghan carpet is carefully handwoven by skilled artisans using traditional methods passed down through generations. It is made from high-quality natural wool and dyed with rich, natural colors that reflect Afghanistan’s deep cultural heritage. Each design carries a story of tradition, patience, and craftsmanship, making every piece unique and valuable for your home.", img:"images/carpet1.jpeg" },
+{ name:"Modern Carpet", price:500, desc:"This modern handmade carpet combines traditional craftsmanship with a contemporary design style. It is carefully woven by skilled artisans using high-quality natural fibers, ensuring durability, softness, and long-lasting beauty. Its minimalist patterns make it perfect for modern homes, adding warmth and elegance to any space.", img:"images/carpet2.jpeg" },
+{ name:"Classic Carpet", price:480, desc:"Elegant classic carpet with traditional patterns, designed to bring warmth and beauty to any home interior.", img:"images/carpet3.jpeg" },
+{ name:"Luxury Carpet", price:550, desc:"Premium quality", img:"images/carpet4.jpeg" },
+{ name:"Soft Wool Carpet", price:800, desc:"Soft texture", img:"images/carpet5.jpeg" },
+{ name:"Vintage Carpet", price:640, desc:"Antique style", img:"images/carpet6.jpeg" }
 ];
 
 // LOGIN
