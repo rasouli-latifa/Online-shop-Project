@@ -97,7 +97,7 @@ cursor:pointer;
 .product-detail{
 width:90%;
 max-width:420px;
-margin:70px auto;
+margin:80px auto;
 background:white;
 padding:25px;
 border-radius:15px;
@@ -171,4 +171,19 @@ gap:30px;
 width:100%;
 max-width:400px;
 border-radius:15px;
+}
+
+.center{ 
+    text-align: center;
+    text-shadow: #7f9db4;
+}
+
+.form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    gap: 15px;
+
 }
