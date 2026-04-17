@@ -21,10 +21,11 @@
 
 <h2 class="center">Contact Us</h2>
 
-<form class="form">
+<form class="form" onsubmit="return validateMessage()">
 <input type="text" placeholder="Your Name">
 <input type="email" placeholder="Your Email">
 <textarea placeholder="Message"></textarea>
+<p id="msg"></p>
 <button type="submit">Send</button>
 </form>
 
