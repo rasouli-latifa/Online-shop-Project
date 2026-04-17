@@ -112,3 +112,54 @@ color:white;
 padding:20px;
 margin-top:40px;
 }
+
+.explore{
+text-align:center;
+margin-top:20px;
+}
+
+.explore button{
+background:#1A3D63;
+color:white;
+padding:10px 18px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.explore button:hover{
+background:#4A7FA7;
+transform:scale(1.05);
+}
+
+/* FEATURES */
+.features{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:30px;
+background:#B3CFE5;
+}
+
+.feature-box{
+background:white;
+padding:15px 20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* WHY SECTION */
+.why{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+gap:30px;
+}
+
+.why-image img{
+width:100%;
+max-width:400px;
+border-radius:15px;
+}
