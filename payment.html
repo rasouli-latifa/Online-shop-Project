@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>💳 Payment</h1>
+</header>
+
+<div class="payment-box">
+
+<h2>Complete Order</h2>
+
+<p>Product: <span id="productName"></span></p>
+<p>Price: $<span id="productPrice"></span></p>
+
+<input type="text" placeholder="Card Number">
+<input type="text" placeholder="Card Holder">
+<input type="text" placeholder="Expiry Date">
+<input type="text" placeholder="CVV">
+
+<button onclick="pay()">Pay Now</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

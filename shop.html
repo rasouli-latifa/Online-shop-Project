@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shop</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,22 +14,57 @@
 <a href="index.html">Home</a>
 <a href="shop.html">Shop</a>
 <a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Logout</a>
 </nav>
 </header>
 
-<h2 class="center">Our Carpets</h2>
+<h2 class="center">Premium Carpet Collection</h2>
 
-<div id="products" class="grid"></div>
+<div class="grid">
 
-<!-- Product Modal -->
-<div id="modal" class="modal">
-<div class="modal-content">
-<span onclick="closeModal()" class="close">&times;</span>
-<img id="modalImg">
-<h3 id="modalName"></h3>
-<p id="modalPrice"></p>
-<button id="addToCartBtn">Add to Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<h3>Persian Carpet</h3>
+<p>$180</p>
+<button onclick="openProduct(0)">View Details</button>
 </div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1616628182504-3f9d6b0a0c3d">
+<h3>Modern Carpet</h3>
+<p>$120</p>
+<button onclick="openProduct(1)">View Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1582582429416-3c4c1e1c4f9b">
+<h3>Classic Carpet</h3>
+<p>$150</p>
+<button onclick="openProduct(2)">View Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
+<h3>Luxury Carpet</h3>
+<p>$250</p>
+<button onclick="openProduct(3)">View Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600585152854-5c2c5c4f3d4a">
+<h3>Soft Wool Carpet</h3>
+<p>$100</p>
+<button onclick="openProduct(4)">View Details</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<h3>Vintage Carpet</h3>
+<p>$140</p>
+<button onclick="openProduct(5)">View Details</button>
+</div>
+
 </div>
 
 <script src="script.js"></script>
