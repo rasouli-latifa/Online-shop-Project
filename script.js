@@ -40,7 +40,7 @@ img:"images/carpet6.jpeg"
 ];
 
 
-// ================= LOGIN =================
+
 
 function login() {
 let u = document.getElementById("username").value;
@@ -50,19 +50,19 @@ let msg = document.getElementById("msg");
 
 if (msg) msg.innerText = "";
 
-// empty check
+
 if (!u || !p) {
 msg.innerText = "❌ Please fill all fields";
 return;
 }
 
-// username validation (no numbers allowed)
+
 if (/\d/.test(u)) {
 msg.innerText = "❌ Username cannot contain numbers";
 return;
 }
 
-// correct login
+
 if (u === "admin" && p === "1234") {
 localStorage.setItem("loggedIn", "true");
 window.location.href = "welcome.html";
@@ -73,7 +73,7 @@ return;
 }
 
 
-// ================= PROTECT SHOP =================
+
 
 if (location.pathname.includes("shop.html")) {
 if (localStorage.getItem("loggedIn") !== "true") {
@@ -82,7 +82,7 @@ window.location.href = "login.html";
 }
 
 
-// ================= PRODUCT PAGE =================
+
 
 function openProduct(i) {
 localStorage.setItem("selectedProduct", i);
@@ -104,7 +104,7 @@ window.location.href = "payment.html";
 }
 
 
-// ================= PAYMENT =================
+
 
 if (location.pathname.includes("payment.html")) {
 let i = localStorage.getItem("selectedProduct");
@@ -120,7 +120,7 @@ document.querySelector(".payment-box").innerHTML =
 }
 
 
-// ================= CART =================
+
 
 function addToCart(i) {
 cart.push(products[i]);
@@ -153,7 +153,7 @@ location.reload();
 }
 
 
-// ================= MESSAGE VALIDATION =================
+
 
 function validateMessage() {
 let message = document.querySelector("textarea").value;
